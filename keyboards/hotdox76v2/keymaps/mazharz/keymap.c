@@ -14,15 +14,9 @@
 #define HMT_GK MT(MOD_LGUI, KC_K)
 #define HMT_SL MT(MOD_LSFT, KC_L)
 #define HMT_CS MT(MOD_LCTL, KC_SCLN)
-// layer 1
+// layer 2
 #define HMT_CNO MT(MOD_LCTL, KC_NO)
 #define HMT_SNO MT(MOD_LSFT, KC_NO)
-#define HMT_GLB MT(MOD_LGUI, KC_LBRC)
-#define HMT_ARB MT(MOD_LALT, KC_RBRC)
-#define HMT_ALC MT(MOD_LALT, S(KC_LBRC))
-#define HMT_GRC MT(MOD_LGUI, S(KC_RBRC))
-#define HMT_CCL MT(MOD_LCTL, S(KC_SCLN))
-// layer 2
 #define HMT_GF11 MT(MOD_LGUI, KC_F11)
 #define HMT_AF12 MT(MOD_LALT, KC_F12)
 #define HMT_ADWN MT(MOD_LALT, KC_DOWN)
@@ -78,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                              └───┴───┴───┘ └───┴───┴───┘
      */
     [1] = LAYOUT_ergodox_pretty(
-        KC_NO,     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_NO,       KC_NO, KC_6,       KC_7,     KC_8,       KC_9,      KC_0,       KC_NO,
-        KC_GRV,    S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), KC_NO,       KC_NO, S(KC_6),    S(KC_7),  S(KC_8),    S(KC_9),   S(KC_0),    S(KC_BSLS),
-        S(KC_GRV), HMT_CNO, HMT_SNO, HMT_GLB, HMT_ARB, KC_NO,                       KC_NO,      HMT_ALC,  HMT_GRC,    HMT_SNO,   HMT_CCL,    S(KC_QUOT),
-        KC_TRNS,   KC_TRNS, KC_NO,   KC_NO,   KC_MINS, KC_PPLS, KC_NO,       KC_NO, S(KC_MINS), KC_EQUAL, S(KC_COMM), S(KC_DOT), S(KC_SLSH), KC_TRNS,
-        KC_NO,     KC_NO,   KC_NO,   KC_TRNS, KC_TRNS,                                          KC_TRNS,  KC_TRNS,    KC_NO,     KC_NO,      KC_NO,
+        KC_NO,     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_NO,       KC_NO, KC_6,       KC_7,       KC_8,       KC_9,      KC_0,       KC_NO,
+        KC_GRV,    S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), KC_NO,       KC_NO, S(KC_6),    S(KC_7),    S(KC_8),    S(KC_9),   S(KC_0),    S(KC_BSLS),
+        S(KC_GRV), KC_NO,   KC_NO,   KC_LBRC, KC_RBRC, KC_NO,                       KC_NO,      S(KC_LBRC), S(KC_RBRC), KC_NO,     S(KC_SCLN), S(KC_QUOT),
+        KC_TRNS,   KC_TRNS, KC_NO,   KC_NO,   KC_MINS, KC_PPLS, KC_NO,       KC_NO, S(KC_MINS), KC_EQUAL,   S(KC_COMM), S(KC_DOT), S(KC_SLSH), KC_TRNS,
+        KC_NO,     KC_NO,   KC_NO,   KC_TRNS, KC_TRNS,                                          KC_TRNS,    KC_TRNS,    KC_NO,     KC_NO,      KC_NO,
                                                        KC_TRNS, RGB_MOD,     RGB_TOG, KC_TRNS,
                                                                 RGB_VAI,     RGB_HUI,
                                               KC_TRNS, KC_TRNS, RGB_VAD,     RGB_HUD, KC_TRNS, KC_TRNS
