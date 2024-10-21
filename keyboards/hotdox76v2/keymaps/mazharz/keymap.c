@@ -61,11 +61,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ┌──────┬───┬───┬───┬───┬───┬───┐       ┌───┬───┬───┬───┬───┬───┬──────┐
      * │      │ 1 │ 2 │ 3 │ 4 │ 5 │   │       │   │ 6 │ 7 │ 8 │ 9 │ 0 │      │
      * ├──────┼───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┼──────┤
-     * │ `    │ ! │ @ │ # │ $ │ % │   │       │   │ ^ │ & │ * │ ( │ ) │    | │
+     * │      │ ! │ @ │ # │ $ │ % │   │       │   │ ^ │ & │ * │ ( │ ) │    | │
      * ├──────┼───┼───┼───┼───┼───┤   │       │   ├───┼───┼───┼───┼───┼──────┤
-     * │ ~    │   │   │ [ │ ] │   ├───┤       ├───┤   │ { │ } │   │ : │    " │
+     * │ ~    │ ` │ [ │ ] │ - │ + ├───┤       ├───┤ _ │ = │ { │ } │ : │    " │
      * ├──────┼───┼───┼───┼───┼───┤   │       │   ├───┼───┼───┼───┼───┼──────┤
-     * │ \/   │\/ │   │   │ - │ + │   │       │   │ _ │ = │ < │ > │ ? │   \/ │
+     * │ \/   │\/ │   │   │   │   │   │       │   │   │   │ < │ > │ ? │   \/ │
      * └──┬───┼───┼───┼───┼───┼───┴───┘       └───┴───┼───┼───┼───┼───┼───┬──┘
      *    │   │   │   │\/ │\/ │                       │ \/│ \/│   │   │   │
      *    └───┴───┴───┴───┴───┘                       └───┴───┴───┴───┴───┘
@@ -78,11 +78,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                    └───┴───┴───┘       └───┴───┴───┘
      */
     [1] = LAYOUT_ergodox_pretty(
-        KC_NO,     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_NO,       KC_NO,   KC_6,      KC_7,      KC_8,       KC_9,      KC_0,       KC_NO,
-        KC_GRV,    S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), KC_NO,       KC_NO,   S(KC_6),   S(KC_7),   S(KC_8),    S(KC_9),   S(KC_0),    S(KC_BSLS),
-        S(KC_GRV), KC_NO,   KC_NO,   KC_LBRC, KC_RBRC, KC_NO,                         KC_NO,     S(KC_LBRC),S(KC_RBRC), KC_NO,     S(KC_SCLN), S(KC_QUOT),
-        KC_TRNS,   KC_TRNS, KC_NO,   KC_NO,   KC_MINS, KC_PPLS, KC_NO,       KC_NO,   S(KC_MINS),KC_EQUAL,  S(KC_COMM), S(KC_DOT), S(KC_SLSH), KC_TRNS,
-        KC_NO,     KC_NO,   KC_NO,   KC_TRNS, KC_TRNS,                                           KC_TRNS,   KC_TRNS,    KC_NO,     KC_NO,      KC_NO,
+        KC_NO,     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_NO,       KC_NO,   KC_6,       KC_7,     KC_8,       KC_9,      KC_0,       KC_NO,
+        KC_NO,     S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), KC_NO,       KC_NO,   S(KC_6),    S(KC_7),  S(KC_8),    S(KC_9),   S(KC_0),    S(KC_BSLS),
+        S(KC_GRV), KC_GRV,  KC_LBRC, KC_RBRC, KC_MINS, KC_PPLS,                       S(KC_MINS), KC_EQUAL, S(KC_LBRC), S(KC_RBRC),S(KC_SCLN), S(KC_QUOT),
+        KC_TRNS,   KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,       KC_NO,   KC_NO,      KC_NO,    S(KC_COMM), S(KC_DOT), S(KC_SLSH), KC_TRNS,
+        KC_NO,     KC_NO,   KC_NO,   KC_TRNS, KC_TRNS,                                            KC_TRNS,  KC_TRNS,    KC_NO,     KC_NO,      KC_NO,
                                                        KC_NO,   RGB_MOD,     RGB_TOG, KC_NO,
                                                                 RGB_VAI,     RGB_HUI,
                                               KC_TRNS, KC_TRNS, RGB_VAD,     RGB_HUD, KC_TRNS, KC_TRNS
