@@ -1,2 +1,2 @@
-#define TAPPING_TERM 250
+#define TAPPING_TERM 200
 #define QUICK_TAP_TERM 0
