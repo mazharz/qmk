@@ -83,9 +83,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         S(KC_GRV), KC_GRV,  KC_LBRC, KC_RBRC, KC_MINS, KC_PPLS,                       S(KC_MINS), KC_EQUAL, S(KC_LBRC), S(KC_RBRC),S(KC_SCLN), S(KC_QUOT),
         KC_TRNS,   KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,       KC_NO,   KC_NO,      KC_NO,    S(KC_COMM), S(KC_DOT), S(KC_SLSH), KC_TRNS,
         KC_NO,     KC_NO,   KC_NO,   KC_TRNS, KC_TRNS,                                            KC_TRNS,  KC_TRNS,    KC_NO,     KC_NO,      KC_NO,
-                                                       KC_NO,   RGB_MOD,     RGB_TOG, KC_NO,
-                                                                RGB_VAI,     RGB_HUI,
-                                              KC_TRNS, KC_TRNS, RGB_VAD,     RGB_HUD, KC_TRNS, KC_TRNS
+                                                       KC_NO,   RM_NEXT,     RM_TOGG, KC_NO,
+                                                                RM_VALU,     RM_HUEU,
+                                              KC_TRNS, KC_TRNS, RM_VALD,     RM_HUED, KC_TRNS, KC_TRNS
     ),
     /*
      * ┌──────┬───┬───┬───┬───┬───┬───┐       ┌───┬───┬───┬───┬───┬───┬──────┐
